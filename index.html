@@ -9,19 +9,21 @@
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <title>My Portfolio</title>
+    
 </head>
 <body>
+  <div class="shutter"></div>
   <div id="cursor"></div>
   <div id="stalker"></div>
   <header class="header">
-    <p class="logo"><a href="index.html">My Portfolio</a></p>
+    <p class="logo"><a href="#">My Portfolio</a></p>
     <nav class="navGlobal" id="js-nav">
       <ul>    
-        <li><a href="#">Works</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Top</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -40,7 +42,7 @@
         <p class="main_caption_p">はじめまして、ポートフォリオに目を通していただきありがとうございます。このポートフォリオでは、自分の今までの経歴やWeb業界に興味を持ったきっかけ、勉強してきたことなど載せております。 どうぞ、よろしくお願いします。</p>
       </div>
    
-      <a href="#works"><div class="scrolldown"><span>Scroll</span></div></a>
+      <a href="#works"><div class="scrolldown"><span class="scb">Scroll</span></div></a>
     </div>
 
     <div class="main_works" id="works">
@@ -90,7 +92,6 @@
             <p class="w_item_text">こちらはオンラインスクールの学習過程で作ったサイトです。Gitを使ったコマンド操作、Githubでのバージョン管理、MySQLの基本操作（CRUD操作やテーブルやデータの作成・編集・削除など）を学んだ後にフロントエンドはBootstrapでバックエンドはPHP/Laravelを使い簡単なメッセージボードを作りました。</p>
           </div>
         </div>
-
         <div class="works_item ani_1 fadeIn">
           <div class="works_item_img">
             <img src="img/portfolio_sns.png" alt="ポートフォリオのイメージ画像">
@@ -268,7 +269,7 @@
     </div>
 
 
-    <div class="main_skills">
+    <div class="main_skills" id="skills">
       <h2 class="main_h2 ani_1 fadeIn">Skills</h2>
       <div class="sk_item_wrap ani_1 fadeIn">
         <div class="sk_item">
@@ -341,7 +342,7 @@
 
     
     
-    <div class="main_about">
+    <div class="main_about" id="about">
       <h2 class="main_h2 ani_1 fadeIn">About Me</h2>
       <div class="about_content ani_1 fadeIn">
         <div class="ab_item">
@@ -372,14 +373,39 @@
       </div>
     </div>
 
-    <div class="main_contact">
-      <h2 class="main_h2 ani_1 fadeIn">Contact</h2>
-      <p class="con_p">お問い合わせは下記のフォームよりお願いたします。</p>
+    <div class="main_contact ani_1 fadeIn" id="contact">
+      <div>
+        <h2 class="main_h2">Contact</h2>
+        <p class="con_p">※お問い合わせは下記のフォームよりお願いたします。</p>
+        <div class="c_content">
+          <form action="#contact">
+            <label for="name">
+              <h4>お名前 <span class="req">*必須</span></h4>
+              <input type="text" name="name" id="name" class="txt_frame" required>
+            </label>
+            <label for="email">
+              <h4>メールアドレス <span class="req">*必須</span></h4>
+              <input type="email" name="email" id="email" class="txt_frame" required>
+            </label>
+            <label for="tel">
+              <h4>電話番号 <span class="tel_sm">（半角数字ハイフンなし）</span></h4>
+              <input type="tel" name="tel" id="tel" class="tel_frame">
+            </label>
+            <label for="contact_txt">
+              <h4>お問い合わせ内容 <span class="req">*必須</span></h4>
+              <textarea name="contact" id="contact_txt" rows="7" placeholder="お問い合わせ内容をご記入ください" class="con_textarea" required></textarea>
+            </label>
+            <a href="#contact" class="send_btn">送信する</a>
+          </form>
+        </div>  
+      </div>
     </div>
   </main>
   <footer>
-    <small>Copyright © 2022 maipyon Portfolio All rights reserved.</small>
+    <small>Copyright © 2022 My Portfolio All rights reserved.</small>
   </footer>
+
+  <a href="#" id="top"><i class="fa-solid fa-rocket"></i></a>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
