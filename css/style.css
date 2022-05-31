@@ -408,6 +408,21 @@ main * { cursor: none !important;}
 
   .about_content { width: 95%; margin: 0 auto;}
 
+  #cursor,
+  #stalker { display: none;} 
+
+  main *,
+  footer { cursor: default !important;}
+
+  main .scb:hover,
+  main a:hover,
+  main .img_text:hover,
+  main .sk_lang *,
+  #top *:hover { cursor: pointer !important;}
+
+  input,
+  textarea { cursor: text !important;}
+
 }
 
 @media screen and (max-width: 775px) { 
