@@ -1,6 +1,7 @@
 'use strict';
 
 {
+  // ハンバーガーメニュー
   const ham = $('#js-hamburger');
   const nav = $('#js-nav');
   ham.on('click', function () { 
@@ -18,17 +19,13 @@
       }
     });
   });
+  // ハンバーガーメニュー
 
-  // ためし
-
+  // カーソルの設定
   $(function(){
-  
-    //カーソル要素の指定
     var cursor=$("#cursor");
-    //ちょっと遅れてついてくるストーカー要素の指定  
     var stalker=$("#stalker");
-    
-    //mousemoveイベントでカーソル要素を移動させる
+ 
     $(document).on("mousemove",function(e){
       //カーソルの座標位置を取得
       var x=e.clientX;
@@ -46,12 +43,12 @@
           "top":y+"px",
           "left":x+"px"
         });
-      },140);//カーソルより遅れる時間を指定
+      },140);
     });
-    //aタグホバー
-    $(".img_text, .sk_lang").on({
+
+    $(".img_text, .sk_lang, .scb, main a, #top").on({
       "mouseenter": function() {
-        //activeクラス付与
+
         cursor.addClass("active");
         stalker.addClass("active");
       },
@@ -62,9 +59,9 @@
       }
     });
   });
+  // カーソルの設定
 
-  // ためし
-
+  // アコーディオンメニュー
   const shows = document.querySelectorAll('.sk_lang');
 
   shows.forEach(show => {
@@ -78,6 +75,21 @@
       });
     });
   });
+  // アコーディオンメニュー
+
+  // トップスクロール
+  const top =document.getElementById('top');
+
+  function topscrollCallback(entries) {
+    entries.forEach(entry => {
+      if(!entry.isIntersecting) {
+        top.classList.add('scrolled');
+      }else{
+        top.classList.remove('scrolled');
+      }
+    });
+  }
+  const topScrollObserver = new IntersectionObserver(topscrollCallback);
+  topScrollObserver.observe(document.getElementById('target'));
+  // トップスクロール
 }
-
-
