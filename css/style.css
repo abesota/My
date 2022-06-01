@@ -343,7 +343,7 @@ main * { cursor: none !important;}
 /* footer */
 
 /* トップスクロール */
-#top { color: #636363; background-color: transparent;  position: fixed; bottom: 44px; right: 40px; font-size: 48px; padding-top: 16px; text-align: center; opacity: 0; transition: opacity 1s; z-index: 5; transition: .5s;}
+#top { color: #636363; background-color: transparent;  position: fixed; bottom: 36px; right: 36px; font-size: 44px; padding-top: 16px; text-align: center; opacity: 0; transition: opacity 1s; z-index: 5; transition: .5s;}
 
 #top,
 #top a,
@@ -503,11 +503,6 @@ main * { cursor: none !important;}
     .txt_frame { width: 60%; margin-bottom: 35px;}
     .tel_frame { width: 50%; margin-bottom: 35px;} 
   /* main_contact */
-
-  /*カーソル要素*/
-  /* #cursor,
-  #stalker,
-  #top { display: none;} */
 }
 
 @media screen and (max-width: 610px) { 
@@ -518,6 +513,8 @@ main * { cursor: none !important;}
 
 @media screen and (max-width: 590px) {  
 .main_caption { height: 450px;}
+
+#top { color: #636363; background-color: transparent;  position: fixed; bottom: 30px; right: 30px; font-size: 36px; padding-top: 16px;}
 }
 
 /* スマホ表示 */
