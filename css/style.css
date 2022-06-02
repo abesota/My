@@ -3,10 +3,9 @@ html{
 }
 
 body {
-  font-family: 'Meiryo', Arial, sans-serif ;
+  font-family: "Segoe UI", 'Meiryo', Arial, sans-serif;
 }
 
-/* "Segoe UI", */
 
  body { color: #636363;}
 
@@ -59,7 +58,6 @@ body {
 }
 /* トップのアニメーション */
 
-
 .header { display: flex; width: 100%; background-color: #fff; margin: 0 auto; height: 70px; position:relative; box-shadow: 0 3px 6px rgba(0,0,0,0.1); z-index: 10; position: fixed; top: 0; left: 0; right: 0; cursor: default !important;}
 
 .header__hamburger { display: none;}
@@ -70,19 +68,14 @@ body {
 
 .navGlobal ul { display: flex; cursor: default !important;}
 .navGlobal ul li { margin: 22px 16px 0; font-size: 18px; font-weight: bold;}
-/* .navGlobal ul li:first-child { display: none; margin-top: 0px; margin-right: 0;} */
 .navGlobal ul li:last-child { margin-right: 30px;}
 .navGlobal ul li a { display: inline-block; color: #333; text-decoration: none; position: relative; cursor: default !important;}
 .navGlobal ul li a::after { position: absolute; bottom: -3px; left: 0; content: ''; width: 100%; height: 2px; background: #333; transform: scale(0, 1); transform-origin: left top; transition: transform .3s;}
 .navGlobal ul li a:hover { text-decoration: none; cursor: pointer !important;}
 .navGlobal ul li a:hover::after { transform: scale(1, 1);}
 
-main { font-family: "Segoe UI", sans-serif ;}  
+main { font-family: "Segoe UI", sans-serif;}  
 main * { cursor: none !important;}
-
-/* main { font-family: "Segoe UI", sans-serif ;  } */
-
-
 
 /* main_caption */
   .main_caption { background-color: #f7f7f7; height: 550px; display: flex; justify-content: center; align-items: center; border-radius: 50% / 20%; position: relative; margin-top: 70px;}
@@ -311,8 +304,6 @@ main * { cursor: none !important;}
   .con_textarea { width: 100%; font-size: 15px; font-weight: normal; padding: 12px 8px 12px; margin-bottom: 40px;}
   .con_textarea::placeholder { font-size: 15px;}
 
-  /* ためし */
-
   .send_btn { display: block; position: relative; width: 200px; padding: 12px 0; margin: 0 auto;
     background-color: #00bfff; box-shadow: 0 3px 0 0 #0086b3; border-radius: 30px; font-weight: bold;
     font-size: 18px; color: #fff; text-align: center; text-decoration: none; overflow: hidden;}
@@ -328,11 +319,6 @@ main * { cursor: none !important;}
     81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
     100% { -webkit-transform: scale(10) rotate(45deg); opacity: 0; }
   }
-
-  /* ためし */
-
-  /* contactform */
-
 /* main_contact */
 
 /* footer */
@@ -382,7 +368,6 @@ main * { cursor: none !important;}
 
 
 /* 以下レスポンシブ */
-
 @media screen and (max-width: 1160px) { 
   /* main_works */
     .main_works h3 { line-height: 1.1;}
@@ -423,6 +408,7 @@ main * { cursor: none !important;}
   input,
   textarea { cursor: text !important;}
 
+  #top { bottom: 30px; right: 30px; font-size: 40px;}
 }
 
 @media screen and (max-width: 775px) { 
@@ -472,9 +458,7 @@ main * { cursor: none !important;}
     .animate .main_caption_p { font-size: 14px;}
   /* main_caption */
 
-  /* main_works */
-    /* .works_wrap { margin-top: 10px; display: block;} */
- 
+  /* main_works */ 
     .works_item:last-child { margin-right: auto;}
     .works_item img { height: 260px;}
     .works_item { width: 80%;}
@@ -513,8 +497,6 @@ main * { cursor: none !important;}
 
 @media screen and (max-width: 590px) {  
 .main_caption { height: 450px;}
-
-#top { color: #636363; background-color: transparent;  position: fixed; bottom: 30px; right: 30px; font-size: 36px; padding-top: 16px;}
 }
 
 /* スマホ表示 */
